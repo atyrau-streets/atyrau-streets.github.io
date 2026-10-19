@@ -44,8 +44,8 @@ python -m http.server 8080
 
 ## Жарияланған сайт
 
-Сайт мекенжайы: **https://b0ran0v.github.io/atyrau/**
-Репозиторий: https://github.com/b0ran0v/atyrau (осы `docs` папкасы репозиторийдің өзі, Pages түбірден `/` жарияланады).
+Сайт мекенжайы: **https://atyrau-streets.github.io/**
+Репозиторий: https://github.com/atyrau-streets/atyrau-streets.github.io (осы `docs` папкасы репозиторийдің өзі, Pages түбірден `/` жарияланады).
 
 ### Сайтты жаңарту
 
