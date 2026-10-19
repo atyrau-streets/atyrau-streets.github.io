@@ -4,4 +4,4 @@
 window.BASE_URL = "https://atyrau-streets.github.io/";
 
 // «Естелік қалдыру» бетіндегі Google Forms сілтемесі.
-window.FORM_URL = "";
+window.FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeE9fX4HX-iStneE-J68JsDR_khp86xeKq2YlOg9StIb42q-Q/viewform";
