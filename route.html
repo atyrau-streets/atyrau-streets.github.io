@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <title>Маршруттар · Көше сөйлейді: Атырау</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5eedc">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="route" data-title="routeTitle">
+  <main class="wrap">
+    <section class="hero">
+      <h1 data-t="routeTitle"></h1>
+      <p class="lead" data-t="routeIntro"></p>
+      <div class="tabs" id="tabs" role="group"></div>
+    </section>
+    <div id="map" class="map"></div>
+    <div class="stats" id="stats"></div>
+    <p class="map-hint" data-t="routeStraight"></p>
+    <section>
+      <h2 data-t="routeStops"></h2>
+      <div class="progress" aria-hidden="true"><span id="quest-bar" style="width:0"></span></div>
+      <p id="quest-status" class="muted"></p>
+      <ol class="stops" id="stops"></ol>
+      <button type="button" class="btn secondary" id="quest-reset" data-t="questReset"></button>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/route.js"></script>
+</body>
+</html>

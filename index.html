@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Қысқа сілтеме: .../#n5 немесе .../?n=5 → object.html?id=5 (QR-кодтар үшін)
+    (function () {
+      var m = location.hash.match(/^#n(\d+)$/) || location.search.match(/[?&]n=(\d+)/);
+      if (m) location.replace("object.html?id=" + m[1]);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Көше сөйлейді: Атырау</title>
+  <meta name="description" content="Атырау қаласының көшелері мен ескерткіштерінің тарихын көрсететін цифрлық платформа.">
+  <meta name="theme-color" content="#f5eedc">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+  <main class="wrap">
+    <section class="hero">
+      <div class="kicker" data-t="heroKicker"></div>
+      <h1 id="hero-title"></h1>
+      <p class="lead" id="hero-goal"></p>
+      <div class="search" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+        <ul id="search-results" role="listbox" hidden></ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="map-title">
+      <h2 id="map-title" data-t="mapTitle"></h2>
+      <div class="legend" id="legend" aria-label="legend"></div>
+      <div id="map" class="map"></div>
+      <p class="map-hint" data-t="mapHint"></p>
+      <div class="near">
+        <button type="button" class="btn accent" id="near-btn" style="width:100%">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+          <span data-t="nearMe"></span>
+        </button>
+        <div id="near-panel" class="near-panel" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="list-title">
+      <h2 id="list-title" data-t="listTitle"></h2>
+      <ul class="cards" id="list"><li class="muted" data-t="loading"></li></ul>
+    </section>
+
+    <section id="city" aria-labelledby="city-title">
+      <div class="panel city" id="city-panel"></div>
+    </section>
+
+    <section aria-labelledby="chron-title">
+      <h2 id="chron-title" data-t="chronicleTitle"></h2>
+      <div id="chronicle"></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/streets.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

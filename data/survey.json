@@ -1,0 +1,9 @@
+{
+  "_readme": "«Дейін/кейін» сауалнама нәтижелері. before/after — пайыз (0–100). Мәндер null болса, диаграмма «деректер әлі жоқ» деп көрсетеді. Сұрақтарды өз сауалнамаңызға сәйкес өзгертіңіз.",
+  "respondents": { "before": null, "after": null },
+  "questions": [
+    { "label": { "kk": "Сұрақ 1", "ru": "Вопрос 1", "en": "Question 1" }, "before": null, "after": null },
+    { "label": { "kk": "Сұрақ 2", "ru": "Вопрос 2", "en": "Question 2" }, "before": null, "after": null },
+    { "label": { "kk": "Сұрақ 3", "ru": "Вопрос 3", "en": "Question 3" }, "before": null, "after": null }
+  ]
+}

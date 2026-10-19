@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "id": "center",
+      "name": { "kk": "Орталық бір сағатта", "ru": "Центр за один час", "en": "The centre in one hour" },
+      "stops": [1, 5, 12, 2, 9, 8],
+      "quest": true
+    },
+    {
+      "id": "art",
+      "name": { "kk": "Ақындар мен күйшілер", "ru": "Поэты и кюйши", "en": "Poets and kuy composers" },
+      "stops": [7, 3, 6, 1, 2],
+      "quest": true
+    },
+    {
+      "id": "valour",
+      "name": { "kk": "Ерлік пен тарих", "ru": "Подвиг и история", "en": "Valour and history" },
+      "stops": [10, 1, 5, 12, 9],
+      "quest": true
+    }
+  ]
+}

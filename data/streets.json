@@ -1,0 +1,15 @@
+{
+  "_readme": "Көшелерді осында қосыңыз. Әр көше үшін: id, name {kk,ru,en}, category (history | poet | hero | science | music | place), object_id (байланысты нысан, болса), person {kk,ru,en} (қысқа мәлімет), old_names [{name, period}] (ескі атаулары), sources [...]. Сызық үшін geometry [[lat,lon],[lat,lon],...] беріңіз (ұсынылады, сенімді). Балама: osm_name (OpenStreetMap-тағы көше атауы) — сызық Overpass API арқылы автоматты алынады, бірақ ол сервер кейде жауап бермейді. Ешқандай деректі ойдан қоспаңыз.",
+  "_example": {
+    "id": "example",
+    "name": { "kk": "... көшесі", "ru": "улица ...", "en": "... Street" },
+    "category": "poet",
+    "object_id": null,
+    "person": { "kk": "", "ru": "", "en": "" },
+    "old_names": [{ "name": "...", "period": "...–..." }],
+    "osm_name": "улица ...",
+    "geometry": null,
+    "sources": []
+  },
+  "streets": []
+}
